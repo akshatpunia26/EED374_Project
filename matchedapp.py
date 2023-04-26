@@ -6,7 +6,7 @@ from scipy.signal import hamming, hann
 
 def main():
     st.title("Matched Filtering Explored")
-     st.markdown("""
+    st.markdown("""
 This Streamlit app demonstrates the use of a matched filter for detecting a signal in noise. A signal is generated with the specified frequency, decay rate, and duration. Gaussian noise is added to the signal with the specified signal-to-noise ratio (SNR). The matched filter output is then computed using a replica of the signal, and the result is displayed in a plot.
 
 **Input Parameters**
