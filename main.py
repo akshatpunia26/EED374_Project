@@ -3,9 +3,8 @@ import radarapp
 import matchedapp
 
 def main():
-    st.title("Radar Apps")
-
-    app = st.sidebar.selectbox("Select App", ["Radar App", "Matched Filter App"])
+    st.title("EED374: Interactive Webapp for Matched Filtering and Radar Compression")
+    app = st.sidebar.selectbox("Select App", ["EED374: Interactive Webapp for Matched Filtering and Radar Compression", "Matched Filter App"])
 
     if app == "Radar App":
         radarapp.main()
