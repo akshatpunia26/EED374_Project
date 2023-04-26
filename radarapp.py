@@ -3,7 +3,25 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def main():
-    st.title('Radar Signal Processing')
+    st.title('Radar Signal Processing: Pulse Compression and Range Calculation')
+
+    st.markdown("""
+This Streamlit app demonstrates pulse compression and range calculation in radar signal processing. Users can adjust various parameters such as pulse width, bandwidth, number of scatterers, minimum range, receiver range, and carrier frequency to generate radar signals and visualize their compressed echo signals.
+
+**Example input parameters:**
+- Pulse width: 0.01 s
+- Bandwidth: 1 GHz
+- Number of scatterers: 3
+- Minimum range: 150,000 m
+- Receiver range: 30 m
+- Carrier frequency: 5.6 GHz
+- Window type: Hamming
+
+**Expected results:**
+- Uncompressed echo signal plot with zero delay coinciding with minimum range
+- Compressed echo signal plot with zero delay coinciding with minimum range
+""")
+
 
     # Define parameters
     taup = st.slider('Pulse Width (s)', 0.001, 0.1, 0.01, 0.001)
