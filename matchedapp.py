@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from numpy.fft import fft, ifft, rfft, irfft
 from scipy.signal import hamming, hann
+st.set_page_config(layout="wide")
 
 def main():
     st.title("Matched Filtering Explored")
