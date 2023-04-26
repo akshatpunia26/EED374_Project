@@ -6,23 +6,20 @@ from scipy.signal import hamming, hann
 
 def main():
     st.title("Matched Filtering Explored")
-
-    st.markdown("""
+     st.markdown("""
 This Streamlit app demonstrates the use of a matched filter for detecting a signal in noise. A signal is generated with the specified frequency, decay rate, and duration. Gaussian noise is added to the signal with the specified signal-to-noise ratio (SNR). The matched filter output is then computed using a replica of the signal, and the result is displayed in a plot.
 
 **Input Parameters**
-
 - `f0`: The frequency of the generated signal in Hz. Example: 150.
 - `tau`: The decay rate of the signal in seconds. Example: 0.005.
 - `SNR`: The signal-to-noise ratio in dB. Example: 10.
 - `n`: The number of samples in the signal. Example: 1000.
 - `Window Type`: The type of window function to apply to the signal. Example: Hamming.
 
-**Expected Results**
-
+**Expected Results:**
 The plot displays the matched filter output versus time. The peak of the matched filter output corresponds to the time delay between the original signal and its replica, which is equal to the decay rate of the signal. The higher the signal-to-noise ratio, the more distinct the peak will be. The window function affects the shape of the matched filter output but does not affect the location of the peak.
+""")
 
-    """)
 
     # Set the default values for the signal parameters
     fs = 1000
