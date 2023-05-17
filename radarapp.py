@@ -1,8 +1,6 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
-st.set_page_config(layout="wide")
-
 
 def main():
     st.title('Radar Signal Processing: Pulse Compression and Range Calculation')

@@ -1,7 +1,8 @@
 import streamlit as st
+st.set_page_config(layout="wide")
 import radarapp
 import matchedapp
-st.set_page_config(layout="wide")
+
 
 def main():
     st.title("EED374:Webapp for Radar Engineering Concepts")
